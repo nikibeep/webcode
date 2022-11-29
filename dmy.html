@@ -1,0 +1,25 @@
+<html> 
+    <head>
+
+    <title>Date display</title>
+    <script type="text/javascript">
+    var days=["First", "second", "Third", "Fourth", "Fifth","sixth", "seventh", "Eighth", "Ninth", "Tenth", "Eleventh", "Twelfth", "Thirteenth", "Fourteenth", "Fifteenth", "Sixteenth", "Seventeenth", "Eighteenth", "Nineteenth", "Twentieth", "Twenty First", "TwentySecond", "Twenty Third", "Twenty Fourth", "Twenty Fifth", "Twenty Sixth", "Twenty Seventh", "Twenty Eighth", "Twenty Ninth", "Thirtieth", "Thirty First"];
+    
+    var months=["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    
+    var year="Two Thousand Eleven";
+    
+    var dateObj = new Date();
+    
+    var currMonth=dateObj.getMonth();
+    
+    var currDate=dateObj.getDate(); 
+    var currYear=dateObj.getFullYear();
+    
+    if(currYear==2011)
+    alert("Today's Date is "+days[currDate-1]+" "+months[currMonth]+" "+year);
+    else
+    alert("Today's Date is "+days[currDate-1]+" "+months[currMonth]+" "+currYear);
+    </script>
+    </head>
+</html>

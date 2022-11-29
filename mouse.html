@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Mouse</title>
+<style type="text/css">
+    #img1{
+        position:absolute;
+        top:50px;
+        left:50px;
+        border:thin;
+        visibility: visible;
+    }
+    #img2{
+        position:absolute;
+        top:50px;
+        left:50px;
+        border:thin;
+        visibility: hidden;
+    }
+</style>
+
+<script type="text/javascript">
+    function changeimg(){
+        var image1=document.getElementById('img1').style;
+        var image2=document.getElementById('img2').style;
+        if(image1.visibility=='visible'){
+            image1.visibility="hidden";
+            image2.visibility="visible";
+        }else{
+            image1.visibility="visible";
+            image2.visibility="hidden";
+        }
+    }
+</script>
+</head>
+<body style="background:linear-gradient(violet,blue);">
+    <form>
+        <img src="E:\webcode\pen.jpg" alt="image1" id="img1" onmouseover="changeimg()" onmouseout="changeimg()">
+        <img src="E:\webcode\ball.jpg" alt="image2" id="img2" onmouseover="changeimg()" onmouseout="changeimg()">
+    </form>
+</body>
+</html>

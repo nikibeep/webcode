@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematical Expression</title>
+    <script type = "text/javascript">
+    function math_exp()
+    {
+        var x = document.expr.exptext.value;
+        var result = eval(x);
+        document.expr.resulttext.value = result;
+    }
+</script>
+</head>
+<body >
+    <form name = "expr">
+        <table>
+            <tr>
+                <td>Expression</td>
+                <td><input type = "text" name = "exptext" /></td>
+            </tr>
+            <tr>
+                <td>Result</td>
+                <td><input type = "text" name = "resulttext" /></td>
+            </tr>
+            <tr>
+                <td><input type = "button" value = "calculate" onclick = "math_exp()" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

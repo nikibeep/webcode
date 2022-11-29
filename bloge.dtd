@@ -1,0 +1,6 @@
+<!ELEMENT catalog (cd+)>
+<!ELEMENT cd (user_id,users,password,email_id)>
+<!ELEMENT user_id (#PCDATA)>
+<!ELEMENT users (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+<!ELEMENT email_id (#PCDATA)>

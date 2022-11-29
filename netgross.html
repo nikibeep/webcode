@@ -1,0 +1,112 @@
+<html>
+
+<head>
+
+<title>Document</title> <script type="text/javascript">
+
+function showSalary(){
+
+var empname = document.getElementById("empname").value; var empno = document.getElementById("empno").value;
+
+var basic = parseInt(document.getElementById("basic").value);
+var hra = basic*0.4;
+
+// hra is 40% of basic salary
+
+var da = basic*0.6;
+
+
+// da is 60% of basic salary
+
+var gross = basic+hra+da;
+
+//pf is 13% of gross! 
+var pf =gross*0.13;
+
+// tax is 20% of gross 
+var tax = gross*0.2;
+
+var deductions = pf+tax;
+
+var netsalary = gross -deductions;
+
+document.writeln("<Table border=5>")
+document.writeln("<tr><th> Employee Salary Breakup Details</th> </tr>")
+
+document.writeln("<tr><td>EmpName:</td><td>"+empname+"</td></tr>")
+
+document.writeln("<tr><td>Empno:</td><td>"+empno+"</td></tr>")
+
+document.writeln("<tr><td>Basicsalary</td><td>"+basic+"</td></tr>")
+
+document.writeln("<tr><td>HRA (40% of basic)</td><td>"+hra+"</td></tr>")
+
+document.writeln("<tr><td>DA (60% ofbasic)</td><td>"+da+"</td></tr>")
+
+document.writeln("<tr><td>GrossSalary</td><td>"+gross+"</td></tr>")
+
+document.writeln("<tr><td>PF (13% ofbasic)</td><td>"+pf+"</td></tr>")
+
+document.writeln("<tr><td>Tax (20% of gross)</td><td>"+tax+"</td></tr>")
+
+document.writeln("<tr><td>Deduction (PF+Tax)</td><td>"+tax+"</td></tr>")
+
+document.writeln("<tr><td><b> Net Salary (Gross Deductions)</b></td></tr>")
+
+document.writeln("<tr><td><b>"+netsalary+"</td></tr>") 
+    document.writeln("</table>")
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<form>
+
+<table border="5">
+
+<tr><th>Employee Details</th></tr>
+
+<tr>
+
+<td>
+
+Employee Name:
+
+</td>
+
+<td><input type="text" id="empname"/> </td>
+
+</tr> <tr>
+
+<td>
+
+Employee Number:
+
+</td>
+
+<td><input type="text" id="empno"/></td>
+
+</tr> <p>
+
+<td>
+
+Basic pay:
+
+</td>
+
+<td><input type="text" id="basic"/></td>
+
+</tr>
+
+</table>
+<br/> <input type="button" value="Show Salary Details" onclick="showSalary()"/>
+
+</form>
+
+</body>
+
+</html>

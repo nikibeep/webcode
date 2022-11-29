@@ -1,0 +1,39 @@
+<html>
+
+<head>
+
+<title>Document</title>
+
+<script type="text/javascript">
+
+function countFormElements() { 
+    alert("The number of form element are:"+document.myForm.length);
+}
+
+</script>
+
+</head>
+
+<body>
+
+<form name="count">
+
+Name: <input type="text" /> <br /><br />
+
+Password: <input type="password" /> <br /><br />
+
+Address: <textarea id="emailBody" cols="50" rows="10"></textarea>
+
+<br /><br />
+
+Sex: <input type="radio" name="gender" /> Male
+Sex: <input type="radio" name="gender" /> Female <br /><br />
+Newsletter:<input type="checkbox" checked="checked" /><br /><br />
+
+<input type="button" value="Send Message" onclick="countFormElements()">
+
+</form
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Function Demo</title>
+        <script type="text/javascript">
+            function isEven(num){
+                if (num % 2 == 0) {
+                    return num;
+                }
+            }
+            function printMsg(num){
+                if (num > 1){
+                    document.write(num + " ");
+                }
+            }
+            var evenNum;
+            const n = parseInt(window.prompt("Enter the max number: n"));
+            document.write("Even Numbers ");
+            for (i = 1; i <= n; i++){
+                evenNum = isEven(i);
+                printMsg(evenNum);
+            }
+        </script>
+    </head>
+<body></body>
+</html>
