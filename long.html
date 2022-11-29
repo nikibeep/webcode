@@ -7,9 +7,10 @@
 		Blog Page
 	</title>
 </head>
-<body style="border: 6px solid #8f00b3; padding: 8px;">
-<table style="border:0px;">
-	<tr>
+<body bgColor="Black" style="border: 6px solid #38b4ed; padding: 8px;">
+<table style="border:0px;" class="center">
+	<h1 style="color:#38b4ed; text-align:center;">Blog</h1>
+	<tr style="color: rgb(71, 27, 214); background: black; text-align:center;">
 		<td>User_id</td>
 		<td>Users</td>
 		<td>password</td>
@@ -71,9 +72,9 @@ function add()
 	cell1.innerHTML+="<tr id=row"+x+"><td><input type='number'></td></tr>";
 	cell2.innerHTML+="<tr id=row"+x+"><td><input type='text'></td></tr>";
 	cell3.innerHTML+="<tr id=row"+x+"><td><input type='password'></td></tr>";
-	cell4.innerHTML+="<tr id=row"+x+"><td><input type='text'></td></tr>";
+	cell4.innerHTML+="<tr id=row"+x+"><td><input type='email'></td></tr>";
 	cell5.innerHTML+="<tr id=row"+x+"><td><input type='text'></td></tr>";
-	cell6.innerHTML+="<tr id=row"+x+"><td><input type='text'></td></tr>";
+	cell6.innerHTML+="<tr id=row"+x+"><td><input type='boolean'></td></tr>";
 	cell7.innerHTML+="<tr id=row"+x+"<td><button type=button name=remove id="+x+" class=btn btn-danger btn_remove1 onclick=remove(id)>Remove</button></td> </tr>";
 }
 
@@ -84,7 +85,11 @@ loadXMLDoc();
 </script>
 <style type="text/css">
 	table, th, td {
-  border: 0px solid black;
+  border: 0px solid blueviolet;
+}
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
 }
 </style>
 </html>
