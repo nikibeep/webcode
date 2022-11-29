@@ -15,8 +15,6 @@
 		<td>Users</td>
 		<td>password</td>
 		<td>email_id</td>
-		<td>article_type</td>
-		<td>status</td>
 	</tr>
 
 	<tbody id="demo"></tbody>
@@ -41,8 +39,8 @@ for(var a=0;xmlDoc.getElementsByTagName("empid")[a].childNodes[0].nodeValue!=nul
 {
 b++;
 
-x=document.getElementById("demo").innerHTML +="<tr id=row"+a+"><td><input type='number' value="+
-xmlDoc.getElementsByTagName("empid")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("empname")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("empaddress")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("empphone")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("empsalary")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("empmail")[a].childNodes[0].nodeValue+"></td><td><button type=button name=remove id="+a+" class=btn btn-danger btn_remove1 onclick=remove1(id)>Remove</button></td></tr>";
+x=document.getElementById("user_id").innerHTML +="<tr id=row"+a+"><td><input type='number' value="+
+xmlDoc.getElementsByTagName("")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("empname")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("empaddress")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("empphone")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("empsalary")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("empmail")[a].childNodes[0].nodeValue+"></td><td><button type=button name=remove id="+a+" class=btn btn-danger btn_remove1 onclick=remove1(id)>Remove</button></td></tr>";
      
 }
 }
