@@ -10,6 +10,8 @@
               <xs:element name="users" type="xs:string" />
               <xs:element name="password" type="xs:string" />
               <xs:element name="email_id" type="xs:string" />
+              <xs:element name="article_type" type="xs:string" />
+              <xs:element name="status" type="xs:string" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

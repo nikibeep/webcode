@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="E:\webcode\blogx.xsl"?>
-<?xml-model href="bloge.xsd"?>
 <!DOCTYPE catalog SYSTEM "bloge.dtd">
+<?xml-model href="bloge.xsd"?>
 <catalog>
   <cd>
     <user_id>001</user_id>
     <users>Nikhil</users>
     <password>12332</password>
     <email_id>nikil@gmail.com</email_id>
+    <article_type></article_type>
+    <status>active</status>
   </cd>
 
   <cd>
@@ -15,6 +17,8 @@
     <users>Melvin</users>
     <password>12123</password>
     <email_id>melvin@gmail.com</email_id>
+    <article_type></article_type>
+    <status>active</status>
   </cd>
 
   <cd>
@@ -22,6 +26,8 @@
     <users>Arpith</users>
     <password>12313</password>
     <email_id>arpith@gmail.com</email_id>
+    <article_type></article_type>
+    <status>inactive</status>
   </cd>
 
   <cd>
@@ -29,6 +35,8 @@
     <users>pradeep</users>
     <password>12313</password>
     <email_id>pradeep@gmail.com</email_id>
+    <article_type>moto</article_type>
+    <status>active</status>
   </cd>
 
   <cd>
@@ -36,6 +44,8 @@
     <users>Aaryan</users>
     <password>13191</password>
     <email_id>aaryan@gamil.com</email_id>
+    <article_type>health</article_type>
+    <status>inactive</status>
   </cd>
 
   <cd>
@@ -43,6 +53,8 @@
     <users>Melon</users>
     <password>23232</password>
     <email_id>melon@gmail.com</email_id>
+    <article_type>education</article_type>
+    <status>active</status>
   </cd>
 
 </catalog>

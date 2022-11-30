@@ -10,6 +10,8 @@
       <th style="text-align:left">users</th>
       <th style="text_align:left">password</th>
       <th style="text-align:left">email_id</th>
+      <th style="text-align:left">article_type</th>
+      <th style="text-align:left">status</th>
     </tr>
     <xsl:for-each select="catalog/cd">
     <tr>
@@ -17,6 +19,8 @@
       <td><xsl:value-of select="users"/></td>
       <td><xsl:value-of select="password"/></td>
       <td><xsl:value-of select="email_id"/></td>
+      <td><xsl:value-of select="article_type"/></td>
+      <td><xsl:value-of select="status"/></td>
     </tr>
     </xsl:for-each>
   </table>
