@@ -37,7 +37,7 @@ function loadXMLDoc() {
     	parser = new DOMParser();
 xmlDoc = parser.parseFromString(this.responseText,"text/xml");
 
-for(var a=0;xmlDoc.getElementsByTagName("user_id")[a].childNodes[0].nodeValue!=null;a++)
+for(var a=0;xmlDoc.getElementsByTagName("demo")[a].childNodes[0].nodeValue!=null;a++)
 {
 b++;
 
