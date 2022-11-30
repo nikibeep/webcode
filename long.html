@@ -37,12 +37,12 @@ function loadXMLDoc() {
     	parser = new DOMParser();
 xmlDoc = parser.parseFromString(this.responseText,"text/xml");
 
-for(var a=0;xmlDoc.getElementsByTagName("empid")[a].childNodes[0].nodeValue!=null;a++)
+for(var a=0;xmlDoc.getElementsByTagName("user_id")[a].childNodes[0].nodeValue!=null;a++)
 {
 b++;
 
 x=document.getElementById("user_id").innerHTML +="<tr id=row"+a+"><td><input type='number' value="+
-xmlDoc.getElementsByTagName("")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("empname")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("empaddress")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("empphone")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("empsalary")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("empmail")[a].childNodes[0].nodeValue+"></td><td><button type=button name=remove id="+a+" class=btn btn-danger btn_remove1 onclick=remove1(id)>Remove</button></td></tr>";
+xmlDoc.getElementsByTagName("user_id")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("users")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("password")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("email_id")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("article_type")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("status")[a].childNodes[0].nodeValue+"></td><td><button type=button name=remove id="+a+" class=btn btn-danger btn_remove1 onclick=remove1(id)>Remove</button></td></tr>";
      
 }
 }
@@ -74,7 +74,7 @@ function add()
 	cell3.innerHTML+="<tr id=row"+x+"><td><input type='password'></td></tr>";
 	cell4.innerHTML+="<tr id=row"+x+"><td><input type='email'></td></tr>";
 	cell5.innerHTML+="<tr id=row"+x+"><td><input type='text'></td></tr>";
-	cell6.innerHTML+="<tr id=row"+x+"><td><input type='boolean'></td></tr>";
+	cell6.innerHTML+="<tr id=row"+x+"><td><input type='text'></td></tr>";
 	cell7.innerHTML+="<tr id=row"+x+"<td><button type=button name=remove id="+x+" class=btn btn-danger btn_remove1 onclick=remove(id)>Remove</button></td> </tr>";
 }
 
