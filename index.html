@@ -70,7 +70,7 @@
           <tr> <td>5</td> <td>Twofish</td></tr>
   </table>
 </article>
-<form method="post">
+<form name="myform" method="post">
   <div class="imgcontainer">
     <img src="ball.jpg" alt="Avatar" class="avatar">
   </div>
@@ -78,8 +78,9 @@
     <h2>Login</h2>
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
+    <input type = "button" value = "Get Cookie" onclick = "getCookie()"/>
     <input type = "button" value = "Set Cookie" onclick = "setCookie()"/>
-    <input type = "button" value = "Get Cookie" onclick = "ReadCookie()"/>
+
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
