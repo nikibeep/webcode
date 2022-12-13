@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="E:\webcode\cookies.js"></script>
 </head>
 <body>
   <header class="main-header">
@@ -77,11 +78,14 @@
     <h2>Login</h2>
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
+    <input type = "button" value = "Set Cookie" onclick = "setCookie()"/>
+    <input type = "button" value = "Get Cookie" onclick = "ReadCookie()"/>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
     <button type="submit">Login</button>
+  
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
